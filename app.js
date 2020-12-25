@@ -83,9 +83,10 @@ function findGeoAvarage() {
 // B-70 puandan fazla alan öğrencilerin listesi
 function findSuccessfullStudents(pLessons, pNoteList, pIndex) {
   let newList = [];
-  for (let i = 0; i < pNoteList.length; i++) {
-    if (pNoteList[i][pIndex] > 70) {
-      newList.push(pNoteList[i][0] + " " + pNoteList[i][pIndex]);
+  for (let index = 0; index < pNoteList.length; index++) {
+    if (pNoteList[index][pIndex] > 70) {
+      console.log(pNoteList[index][pIndex]);
+      newList.push(pNoteList[index][0] + " " + pNoteList[index][pIndex]);
     }
   }
   console.log(pLessons, newList);
