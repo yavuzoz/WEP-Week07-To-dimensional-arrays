@@ -85,7 +85,7 @@ function findSuccessfullStudents(pLessons, pNoteList, pIndex) {
   let newList = [];
   for (let index = 0; index < pNoteList.length; index++) {
     if (pNoteList[index][pIndex] > 70) {
-      console.log(pNoteList[index][pIndex]);
+      // console.log(pNoteList[index][pIndex]);
       newList.push(pNoteList[index][0] + " " + pNoteList[index][pIndex]);
     }
   }
@@ -135,6 +135,7 @@ findStudentsOverAvarage("Cografyadan ortalamanin üzerinde alan: ", notes, 4);
 // D-En başarılı dersler
 function findMostSuccessfullLesson() {
   let avarageList = [matheAvarage, germanAvarage, englishAvarage, geoAvarage];
+  // console.log(avarageList)
   let maxAvarage = Math.max.apply(null, avarageList);
 
   let mostSuccessfullLesson = null;
@@ -185,7 +186,8 @@ findMinSuccessfulLesson();
 // F-En başarılı öğrencilerin listesi
 function findMostSuccessfullStudent(pIndex) {
   let successStudent = [];
-  let maxNotes = notes[0][1];
+  let maxNotes = notes[0][2];
+  // console.log(maxNotes);
   for (let index = 0; index < notes.length; index++) {
     if (notes[index][pIndex] >= maxNotes) {
       maxNotes = notes[index][pIndex];
