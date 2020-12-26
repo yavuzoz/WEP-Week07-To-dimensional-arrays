@@ -186,7 +186,7 @@ findMinSuccessfulLesson();
 // F-En başarılı öğrencilerin listesi
 function findMostSuccessfullStudent(pIndex) {
   let successStudent = [];
-  let maxNotes = notes[0][2];
+  let maxNotes = notes[0][1];
   // console.log(maxNotes);
   for (let index = 0; index < notes.length; index++) {
     if (notes[index][pIndex] >= maxNotes) {
